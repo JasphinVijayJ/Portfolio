@@ -7,7 +7,7 @@ var typed= new Typed(".text-1", {
     });
     
 var typed= new Typed(".text-2", {
-strings: ["College Student", "", "Fresher", ""],
+strings: ["", "Full-Stack Developer", ""],
 typeSpeed: 100,
 backSpeed: 100,
 backDelay: 1000,
