@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+/* Common Classes */
+.gradient-color {
+  background: linear-gradient(to left, #56ccf2, #2f80ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.heading-h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+/* Arrow Section */
+#scrollArrow {
+  position: fixed;
+  z-index: 3;
+  right: 40px;
+  bottom: 40px;
+  display: none;
+  /* Hide for now and use JS for show the arrow */
+  width: 40px;
+  height: 40px;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  color: white;
+  align-content: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+#scrollArrow:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px #2f80ed;
+}
+
+/* PopupAlert */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-alert {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  justify-items: center;
+  min-width: 280px;
+  border: 1px solid #333;
+  animation: popupSlide 0.4s ease;
+}
+
+@keyframes popupSlide {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.popup-alert.success {
+  border-left: 4px solid #22c55e;
+  border-right: 4px solid #22c55e;
+  color: #22c55e;
+}
+
+.popup-alert.error {
+  border-left: 4px solid #ef4444;
+  border-right: 4px solid #ef4444;
+  color: #ef4444;
+}
+
+.popup-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+}
+
+.popup-alert.success .popup-icon {
+  background: #22c55e;
+}
+
+.popup-alert.error .popup-icon {
+  background: #ef4444;
+}
+
+.popup-message {
+  padding-top: 15px;
+  font-size: large;
+  font-weight: bold;
+}
