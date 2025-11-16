@@ -2,7 +2,7 @@ const skillsData = [
     {
         title: "Frontend",
         icon: "fa-solid fa-laptop-code",
-        skills: ["HTML5/CSS3", "JavaScript", "React", "Bootstrap"]
+        skills: ["HTML5/CSS3", "JavaScript", "React.js", "Bootstrap"]
     },
     {
         title: "Backend",

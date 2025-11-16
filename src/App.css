@@ -13,7 +13,7 @@ header {
 .logo {
   text-decoration: none;
   color: white;
-  margin-left: 60px;
+  margin-left: 20px;
   font-size: 25px;
   font-weight: 600;
 }
@@ -21,7 +21,7 @@ header {
 .navbar {
   position: absolute;
   top: 25px;
-  right: 150px;
+  right: 110px;
   font-size: 25px;
 }
 
@@ -91,7 +91,7 @@ header {
 
 /* About Section */
 #about-section {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 140px 120px 0px;
 }
 
@@ -148,67 +148,6 @@ header {
 .link-item a:hover {
   color: #56ccf2;
   text-decoration: underline;
-}
-
-
-/* Education Section */
-#education-section {
-  margin-top: 50px;
-  padding: 110px 120px 0px;
-}
-
-.education-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.education-item {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 40px;
-  border-left: 4px solid #2f80ed;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.education-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px #2f81ed63;
-}
-
-.education-header {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #333;
-  padding-bottom: 10px;
-}
-
-.education-header h3 {
-  font-size: 22px;
-}
-
-.education-year {
-  background: linear-gradient(to right, #56ccf2, #2f80ed);
-  padding: 8px 10px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  min-width: 80px;
-  text-align: center;
-}
-
-.education-details h4 {
-  font-size: 18px;
-  color: #56ccf2;
-  margin-bottom: 8px;
-}
-
-.education-location {
-  color: #aaa;
-  margin-bottom: 8px;
 }
 
 
@@ -367,6 +306,126 @@ header {
 .project-links a:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px #2f81ed63;
+}
+
+
+/* Certificate Section */
+#certificate-section {
+  padding-top: 120px;
+}
+
+.certificate-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 50px;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.certificate-item {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 40px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: scale(1.02);
+}
+
+.certificate-item img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-item:hover img {
+  transform: scale(1.02);
+}
+
+.prev-next-btn {
+  background: #333;
+  color: white;
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.prev-next-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.prev-next-btn:hover:not(:disabled) {
+  background: #555;
+}
+
+
+/* Education Section */
+#education-section {
+  margin-top: 50px;
+  padding: 110px 120px 0px;
+}
+
+.education-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-item {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-left: 4px solid #2f80ed;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px #2f81ed63;
+}
+
+.education-header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.education-header h3 {
+  font-size: 22px;
+}
+
+.education-year {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: center;
+}
+
+.education-details h4 {
+  font-size: 18px;
+  color: #56ccf2;
+  margin-bottom: 8px;
+}
+
+.education-location {
+  color: #aaa;
+  margin-bottom: 8px;
 }
 
 
@@ -574,36 +633,6 @@ textarea:focus {
 
 /* Responsive Design */
 @media screen and (max-width:1070px) {
-  .logo {
-    margin-left: 20px;
-  }
-
-  .navbar {
-    right: 100px;
-  }
-
-  #about-section,
-  #skills-section {
-    padding-top: 120px;
-  }
-
-  #about-section,
-  #education-section,
-  #skills-section,
-  #projects-section,
-  #contact-section {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-
-/* --------------------------------------- */
-
-@media screen and (max-width:970px) {
-  .logo {
-    margin-left: 60px;
-  }
-
   .menu {
     display: flex;
   }
@@ -628,6 +657,27 @@ textarea:focus {
     margin: 0;
     text-align: center;
     border-bottom: 2px solid #222;
+  }
+
+  #skills-section {
+    padding-top: 120px;
+  }
+
+  #about-section,
+  #education-section,
+  #skills-section,
+  #projects-section,
+  #contact-section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/* --------------------------------------- */
+
+@media screen and (max-width:970px) {
+  .logo {
+    margin-left: 60px;
   }
 }
 
@@ -666,6 +716,24 @@ textarea:focus {
     font-size: 18px;
   }
 
+  #about-section {
+    padding-top: 120px;
+  }
+
+  .certificate-container {
+    gap: 30px;
+  }
+
+  .certificate-item {
+    padding: 30px;
+  }
+
+  .prev-next-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
   #contact-section {
     padding: 60px 30px 30px;
   }
@@ -678,6 +746,14 @@ textarea:focus {
 /* --------------------------------------- */
 
 @media screen and (max-width:750px) {
+  .certificate-container {
+    gap: 20px;
+  }
+
+  .certificate-item {
+    padding: 20px;
+  }
+
   .skills-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -706,6 +782,7 @@ textarea:focus {
 
   .heading-h2 {
     font-size: 30px;
+    margin-bottom: 40px;
   }
 
   .menu {
@@ -718,6 +795,21 @@ textarea:focus {
 
   #about-section {
     padding: 100px 20px 0;
+  }
+
+  .certificate-container {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .certificate-item {
+    padding: 10px;
+  }
+
+  .prev-next-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
   }
 
   #skills-section {
@@ -761,8 +853,29 @@ textarea:focus {
     font-size: 14px;
   }
 
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
   .project-content {
     padding: 20px;
+  }
+
+  #contact-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .form-row {
+    display: block;
+  }
+
+  .form-row>.form-group {
+    width: 100%;
   }
 }
 

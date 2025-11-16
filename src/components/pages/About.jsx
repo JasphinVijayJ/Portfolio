@@ -1,10 +1,10 @@
 const details = [
     { label: "Name:", value: "Jasphin Vijay J" },
     { label: "Date of Birth:", value: "03-10-2002" },
-    { label: "Gender:", value: "Male" },
     { label: "Experience:", value: "6-month training @ Besant Technologies" },
     { label: "Education:", value: "B.Tech - Information Technology" },
     { label: "Certifications:", value: "Java Full-Stack Development - Besant Technologies" },
+    { label: "Languages:", value: "English, Tamil" },
     {
         label: "GitHub:",
         value: <a href="https://github.com/JasphinVijayJ" target="_blank" rel="noopener noreferrer">View GitHub</a>,
