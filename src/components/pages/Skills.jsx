@@ -2,17 +2,17 @@ const skillsData = [
     {
         title: "Frontend",
         icon: "fa-solid fa-laptop-code",
-        skills: ["HTML5/CSS3", "JavaScript", "React.js", "Bootstrap"]
+        skills: ["HTML5/CSS3", "JavaScript", "React.js", "React Hooks", "React Router", "Responsive Web Design"]
     },
     {
         title: "Backend",
         icon: "fa-solid fa-server",
-        skills: ["Java", "Spring Boot", "REST API", "Servlets"]
+        skills: ["Java", "Spring Boot", "REST API", "Servlets & JSP", "Spring MVC", "JWT Authentication"]
     },
     {
         title: "Database & Tools",
         icon: "fa-solid fa-database",
-        skills: ["MySQL", "SQL (Joints, Indexing)", "Postman", "Apache Tomcat"]
+        skills: ["MySQL", "SQL (Joins, Indexing)", "Postman", "Git/GitHub", "Spring Tool Suite (STS)", "Maven"]
     }
 ];
 

@@ -4,7 +4,7 @@ const details = [
     { label: "Experience:", value: "6-month training @ Besant Technologies" },
     { label: "Education:", value: "B.Tech - Information Technology" },
     { label: "Certifications:", value: "Java Full-Stack Development - Besant Technologies" },
-    { label: "Languages:", value: "English, Tamil" },
+    { label: "Relocation:", value: "Open to opportunities across India and abroad" },
     {
         label: "GitHub:",
         value: <a href="https://github.com/JasphinVijayJ" target="_blank" rel="noopener noreferrer">View GitHub</a>,
@@ -23,14 +23,12 @@ function About() {
             <h2 className="heading-h2">About <span className="gradient-color">Me</span></h2>
 
             <div className="about-content">
-                <p>As a Java Full Stack Developer, I specialize in building high-performance web applications with
-                    end-to-end
-                    solutions using Spring Boot for reliable backend services and React for responsive frontend interfaces.
-                    During
-                    my 6-month training at Besant Technologies, I developed strong skills in Java, Spring Boot, and React,
-                    along with
-                    RESTful API development, applying industry best practices to deliver scalable, enterprise-grade
-                    solutions.</p>
+                <p>
+                    As a Java Full-Stack Developer, I have hands-on experience in building scalable web applications using
+                    Spring Boot and React. During my 6-month training at Besant Technologies, I worked on real-time projects
+                    involving REST APIs, authentication systems, database integration, and responsive UI development.
+                    I focus on writing clean, maintainable code and building applications that are efficient, secure, and user-friendly.
+                </p>
 
                 <div className="about-details">
 

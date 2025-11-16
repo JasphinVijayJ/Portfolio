@@ -14,7 +14,7 @@ const contactInfo = [
     {
         icon: "fas fa-map-marker-alt",
         title: "Location",
-        content: "Chennai, Tamil Nadu, India"
+        content: "Kanyakumari, Tamil Nadu, India"
     }
 ];
 

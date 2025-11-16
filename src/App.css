@@ -92,7 +92,7 @@ header {
 /* About Section */
 #about-section {
   margin-top: 30px;
-  padding: 140px 120px 0px;
+  padding: 140px 10px 0px;
 }
 
 .about-content>p {
@@ -153,12 +153,12 @@ header {
 
 /* Skills Section */
 #skills-section {
-  padding: 170px 120px 0px;
+  padding: 170px 100px 0px;
 }
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
