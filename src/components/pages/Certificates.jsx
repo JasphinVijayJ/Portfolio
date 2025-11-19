@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
 
-import spring from '../../assets/certificate/spring-boot-guvi-certification.png';
-import java from '../../assets/certificate/java-certification-course.jpg';
-import sql from '../../assets/certificate/introduction-to-sql.jpg';
+import frontendDeveloperReact from '../../assets/certificate/frontend-developer-react-certificate.jpg';
+import springBootGuvi from '../../assets/certificate/spring-boot-guvi-certification.png';
+import reactBasic from '../../assets/certificate/react-basic-certificate.jpg';
+import javaCertification from '../../assets/certificate/java-certification-course.jpg';
+import introductionToSQL from '../../assets/certificate/introduction-to-sql.jpg';
 
 const certificates = [
-    { id: 1, image: spring, alt: 'Spring Boot Certificate' },
-    { id: 2, image: java, alt: 'Java Full-Stack Certificate' },
-    { id: 3, image: sql, alt: 'One More Certificate' },
+    { id: 5, image: frontendDeveloperReact, alt: 'frontend-developer-react-certificate' },
+    { id: 4, image: springBootGuvi, alt: 'spring-boot-guvi-certification' },
+    { id: 3, image: reactBasic, alt: 'react-basic-certificate' },
+    { id: 2, image: javaCertification, alt: 'assets/certificate/java-certification-course' },
+    { id: 1, image: introductionToSQL, alt: 'introduction-to-sql' },
 ];
 
 function Certificates() {
